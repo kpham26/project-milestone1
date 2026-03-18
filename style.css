@@ -1,130 +1,99 @@
-/* GENERAL */
+/* Font + general */
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
-  line-height: 1.6;
+  background: #f4f6f8;
 }
 
-/* HEADER */
+/* Header */
 header {
-  background-color: #1e3a5f;
+  background: #1e3a5f;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-header h1 {
-  margin: 0;
-}
-
-header h2 {
-  margin: 5px 0;
-  font-weight: normal;
-}
-
-/* NAVIGATION */
+/* Navigation (flex = requirement) */
 nav {
-  background-color: #333;
+  background: #333;
   padding: 10px;
 }
 
 nav h1 {
   color: white;
-  font-size: 16px;
   text-align: center;
-  margin: 0 0 5px 0;
+  font-size: 16px;
+  margin: 0 0 5px;
 }
 
 nav ul {
+  display: flex;
+  justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
 nav li {
-  display: inline;
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   padding: 6px 10px;
-}
-
-nav a:hover {
-  background-color: #1e3a5f;
+  border: 1px solid #555;
   border-radius: 5px;
 }
 
-/* MAIN CONTENT BOX */
+/* Hover effect (requirement) */
+nav a:hover {
+  background: #1e3a5f;
+}
+
+/* Main content */
 main {
   max-width: 900px;
   margin: 20px auto;
   padding: 20px;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: white;
+  border: 1px solid #ddd;
 }
 
-/* SECTIONS */
+/* Sections */
 section {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
-h2 {
-  color: #1e3a5f;
-}
-
-/* IMAGE */
+/* Image */
 img {
   display: block;
   margin: 0 auto 20px;
   width: 150px;
 }
 
-/* LISTS */
-ul, ol {
-  margin-left: 20px;
-}
-
-/* TABLE */
+/* Table */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 15px;
 }
 
 th, td {
-  border: 1px solid #888;
-  padding: 12px;
-  text-align: left;
-  vertical-align: top;
+  border: 1px solid #999;
+  padding: 10px;
 }
 
 th {
-  background-color: #dbe9f6;
+  background: #ddd;
 }
 
-/* Alternate row colors */
-tr:nth-child(even) {
-  background-color: #f5f5f5;
-}
-
-/* FOOTER */
-footer {
-  background-color: #1e3a5f;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-footer a {
-  color: #cce6ff;
+/* Link style (different from example) */
+main a {
   text-decoration: none;
+  border-bottom: 2px dotted #1e3a5f;
+  color: #1e3a5f;
 }
 
-
+main a:hover {
+  border-bottom: 2px solid #1e3a5f;
+}
