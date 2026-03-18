@@ -2,30 +2,30 @@
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   margin: 0;
-  background: #0f172a;
-  color: #e2e8f0;
+  background: #ffffff;
+  color: #333;
 }
 
 /* Header */
 header {
-  background: #111827;
-  color: #38bdf8;
+  background: #ff7f50; /* coral */
+  color: white;
   text-align: center;
   padding: 20px;
-  border-bottom: 2px solid #38bdf8;
 }
 
 /* Navigation */
 nav {
-  background: #020617;
+  background: #f1f5f9;
   padding: 10px;
+  border-bottom: 1px solid #ddd;
 }
 
 nav h1 {
-  color: #94a3b8;
   text-align: center;
   font-size: 14px;
   margin: 0 0 5px;
+  color: #555;
 }
 
 /* Flex layout */
@@ -42,18 +42,16 @@ nav li {
 }
 
 nav a {
-  color: #cbd5f5;
   text-decoration: none;
-  padding: 6px 12px;
-  border: 1px solid #1e293b;
-  border-radius: 6px;
+  color: #333;
+  padding: 6px 10px;
+  border-radius: 4px;
 }
 
-/* Hover (glow effect) */
+/* Hover */
 nav a:hover {
-  background: #38bdf8;
-  color: #0f172a;
-  border-color: #38bdf8;
+  background: #ff7f50;
+  color: white;
 }
 
 /* Main */
@@ -61,14 +59,14 @@ main {
   max-width: 850px;
   margin: 25px auto;
   padding: 20px;
-  background: #111827;
-  border: 1px solid #1e293b;
-  border-radius: 10px;
+  background: #ffffff;
 }
 
 /* Sections */
 section {
   margin-bottom: 25px;
+  padding: 10px;
+  border-left: 4px solid #ff7f50;
 }
 
 /* Image */
@@ -76,8 +74,6 @@ img {
   display: block;
   margin: 0 auto 20px;
   width: 140px;
-  border: 2px solid #1e293b;
-  border-radius: 8px;
 }
 
 /* Table */
@@ -87,29 +83,28 @@ table {
 }
 
 th, td {
-  border: 1px solid #334155;
+  border: 1px solid #ddd;
   padding: 10px;
 }
 
 th {
-  background: #1e293b;
-  color: #38bdf8;
+  background: #ffe4dc;
 }
 
-/* Links (different style) */
+/* Links */
 main a {
-  color: #38bdf8;
+  color: #ff7f50;
   text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
 main a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid #ff7f50;
 }
 
 /* Footer */
 footer {
-  background: #020617;
-  color: #94a3b8;
+  background: #f1f5f9;
   text-align: center;
   padding: 15px;
   margin-top: 20px;
