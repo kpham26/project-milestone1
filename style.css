@@ -117,43 +117,44 @@ footer {
   margin-top: 20px;
 }
 
-/* Base font size */
+/* Base scaling */
 body {
-  font-size: 16px; /* was default ~14 */
+  font-size: 27px; /* ~1.7x of 16px */
 }
 
-/* Header text */
+/* Header */
 header h1 {
-  font-size: 32px;
+  font-size: 48px;
 }
 
 header h2 {
-  font-size: 18px;
+  font-size: 28px;
 }
 
 /* Navigation */
 nav a {
-  font-size: 16px;
+  font-size: 22px;
 }
 
 /* Section titles */
 h2 {
-  font-size: 22px;
+  font-size: 34px;
 }
 
-/* Paragraph text */
+/* Paragraphs */
 p {
-  font-size: 17px;
+  font-size: 27px;
+  line-height: 1.8;
 }
 
 /* Lists */
 li {
-  font-size: 16px;
+  font-size: 25px;
 }
 
-/* Table text */
+/* Tables */
 th, td {
-  font-size: 16px;
+  font-size: 25px;
 }
 
 p {
