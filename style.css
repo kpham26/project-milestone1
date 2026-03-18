@@ -57,6 +57,7 @@ nav a {
   border-radius: 5px;
   font-size: 18px;
   transition: 0.2s;
+  font-weight: 600;
 }
 
 /* Hover effect */
@@ -69,6 +70,7 @@ nav a:hover {
 nav a.active {
   background-color: #4a6fa5;
   color: white;
+  font-weight: 700;
 }
 
 /* Main */
