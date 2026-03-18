@@ -1,28 +1,29 @@
-/* Font + general */
+/* General */
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   margin: 0;
-  background: #f4f6f8;
+  background: #f7f9fc;
+  color: #2c2c2c;
 }
 
 /* Header */
 header {
-  background: #1e3a5f;
+  background: #4a6fa5;
   color: white;
   text-align: center;
   padding: 20px;
 }
 
-/* Navigation (flex = requirement) */
+/* Navigation */
 nav {
-  background: #333;
+  background: #2f3e4e;
   padding: 10px;
 }
 
 nav h1 {
-  color: white;
+  color: #dfe6ee;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 5px;
 }
 
@@ -35,29 +36,28 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 12px;
 }
 
 nav a {
-  color: white;
+  color: #e6edf5;
   text-decoration: none;
   padding: 6px 10px;
-  border: 1px solid #555;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
-/* Hover effect (requirement) */
+/* subtle hover */
 nav a:hover {
-  background: #1e3a5f;
+  background: #4a6fa5;
 }
 
-/* Main content */
+/* Main */
 main {
-  max-width: 900px;
-  margin: 20px auto;
+  max-width: 850px;
+  margin: 25px auto;
   padding: 20px;
   background: white;
-  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 /* Sections */
@@ -69,7 +69,7 @@ section {
 img {
   display: block;
   margin: 0 auto 20px;
-  width: 150px;
+  width: 140px;
 }
 
 /* Table */
@@ -79,21 +79,20 @@ table {
 }
 
 th, td {
-  border: 1px solid #999;
+  border: 1px solid #ddd;
   padding: 10px;
 }
 
 th {
-  background: #ddd;
+  background: #eef3f8;
 }
 
-/* Link style (different from example) */
+/* Links (clean style) */
 main a {
+  color: #4a6fa5;
   text-decoration: none;
-  border-bottom: 2px dotted #1e3a5f;
-  color: #1e3a5f;
 }
 
 main a:hover {
-  border-bottom: 2px solid #1e3a5f;
+  text-decoration: underline;
 }
