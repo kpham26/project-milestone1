@@ -44,13 +44,20 @@ nav li {
 nav a {
   text-decoration: none;
   color: #333;
-  padding: 6px 10px;
-  border-radius: 4px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
-/* Hover */
+/* Hover effect */
 nav a:hover {
-  background: #ff7f50;
+  background-color: #4a6fa5;
+  color: white;
+}
+
+/* Active page (stays highlighted) */
+nav a.active {
+  background-color: #4a6fa5;
   color: white;
 }
 
