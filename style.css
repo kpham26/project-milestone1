@@ -4,14 +4,23 @@ body {
   margin: 0;
   background: #ffffff;
   color: #333;
+  font-size: 22px; /* adjusted for better balance */
 }
 
 /* Header */
 header {
-  background: #ff7f50; /* coral */
+  background: #ff7f50;
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+header h1 {
+  font-size: 42px;
+}
+
+header h2 {
+  font-size: 24px;
 }
 
 /* Navigation */
@@ -23,7 +32,7 @@ nav {
 
 nav h1 {
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   margin: 0 0 5px;
   color: #555;
 }
@@ -46,6 +55,7 @@ nav a {
   color: #333;
   padding: 8px 12px;
   border-radius: 5px;
+  font-size: 18px;
   transition: 0.2s;
 }
 
@@ -55,7 +65,7 @@ nav a:hover {
   color: white;
 }
 
-/* Active page (stays highlighted) */
+/* Active page */
 nav a.active {
   background-color: #4a6fa5;
   color: white;
@@ -71,9 +81,25 @@ main {
 
 /* Sections */
 section {
-  margin-bottom: 25px;
-  padding: 10px;
+  margin-bottom: 30px;
+  padding: 15px;
   border-left: 4px solid #ff7f50;
+}
+
+/* Headings */
+h2 {
+  font-size: 28px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* Lists */
+li {
+  font-size: 20px;
 }
 
 /* Image */
@@ -92,6 +118,7 @@ table {
 th, td {
   border: 1px solid #ddd;
   padding: 10px;
+  font-size: 20px;
 }
 
 th {
@@ -115,48 +142,4 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 20px;
-}
-
-/* Base scaling */
-body {
-  font-size: 27px; /* ~1.7x of 16px */
-}
-
-/* Header */
-header h1 {
-  font-size: 48px;
-}
-
-header h2 {
-  font-size: 28px;
-}
-
-/* Navigation */
-nav a {
-  font-size: 22px;
-}
-
-/* Section titles */
-h2 {
-  font-size: 34px;
-}
-
-/* Paragraphs */
-p {
-  font-size: 27px;
-  line-height: 1.8;
-}
-
-/* Lists */
-li {
-  font-size: 25px;
-}
-
-/* Tables */
-th, td {
-  font-size: 25px;
-}
-
-p {
-  line-height: 1.7;
 }
