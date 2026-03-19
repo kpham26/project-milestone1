@@ -1,147 +1,147 @@
 /* General */
 body {
-  font-family: 'Open Sans', Arial, sans-serif;  /* Set font */
-  margin: 0;
-  background: #ffffff;  /*Make background color white */
-  color: #333;
-  font-size: 22px; /* adjusted for better balance */
+  font-family: 'Open Sans', Arial, sans-serif; /* Set font for the whole website */
+  margin: 0; /* Remove default space around the page */
+  background: #ffffff; /* Make background color white */
+  color: #333; /* Set main text color */
+  font-size: 22px; /* Set base text size */
 }
 
 /* Header */
 header {
-  background: #ff7f50;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  background: #ff7f50; /* Set header background color */
+  color: white; /* Make header text white */
+  text-align: center; /* Center header text */
+  padding: 20px; /* Add space inside header */
 }
 
 header h1 {
-  font-size: 42px;
+  font-size: 42px; /* Make main header title larger */
 }
 
 header h2 {
-  font-size: 24px;
+  font-size: 24px; /* Make subtitle smaller than main title */
 }
 
 /* Navigation */
 nav {
-  background: #f1f5f9;
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+  background: #f1f5f9; /* Set navigation background color */
+  padding: 10px; /* Add space inside navigation bar */
+  border-bottom: 1px solid #ddd; /* Add line below navigation */
 }
 
 nav h1 {
-  text-align: center;
-  font-size: 16px;
-  margin: 0 0 5px;
-  color: #555;
+  text-align: center; /* Center navigation heading */
+  font-size: 16px; /* Set navigation heading size */
+  margin: 0 0 5px; /* Remove top margin and add small bottom space */
+  color: #555; /* Set navigation heading color */
 }
 
 /* Flex layout */
 nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  display: flex; /* Put navigation items in one row */
+  justify-content: center; /* Center navigation items */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default list padding */
+  margin: 0; /* Remove default list margin */
 }
 
 nav li {
-  margin: 0 12px;
+  margin: 0 12px; /* Add space between navigation items */
 }
 
 nav a {
-  text-decoration: none;
-  color: #333;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-size: 18px;
-  transition: 0.2s;
-  font-weight: 600;
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set navigation link color */
+  padding: 8px 12px; /* Add space inside link area */
+  border-radius: 5px; /* Round the corners of the link background */
+  font-size: 18px; /* Set navigation text size */
+  transition: 0.2s; /* Make hover effect smooth */
+  font-weight: 600; /* Make navigation text semi-bold */
 }
 
 /* Hover effect */
 nav a:hover {
-  background-color: #4a6fa5;
-  color: white;
+  background-color: #4a6fa5; /* Change background color when mouse is over link */
+  color: white; /* Change text color on hover */
 }
 
 /* Active page */
 nav a.active {
-  background-color: #4a6fa5;
-  color: white;
-  font-weight: 700;
+  background-color: #4a6fa5; /* Highlight current page link */
+  color: white; /* Make active page text white */
+  font-weight: 700; /* Make active page text bolder */
 }
 
 /* Main */
 main {
-  max-width: 850px;
-  margin: 25px auto;
-  padding: 20px;
-  background: #ffffff;
+  max-width: 850px; /* Limit content width */
+  margin: 25px auto; /* Center main content and add top/bottom space */
+  padding: 20px; /* Add space inside main content area */
+  background: #ffffff; /* Keep main content background white */
 }
 
 /* Sections */
 section {
-  margin-bottom: 30px;
-  padding: 15px;
-  border-left: 4px solid #ff7f50;
+  margin-bottom: 30px; /* Add space between sections */
+  padding: 15px; /* Add space inside each section */
+  border-left: 4px solid #ff7f50; /* Add colored line on left side of each section */
 }
 
 /* Headings */
 h2 {
-  font-size: 28px;
+  font-size: 28px; /* Set section heading size */
 }
 
 /* Paragraphs */
 p {
-  font-size: 20px;
-  line-height: 1.7;
+  font-size: 20px; /* Set paragraph text size */
+  line-height: 1.7; /* Add space between lines for readability */
 }
 
 /* Lists */
 li {
-  font-size: 20px;
+  font-size: 20px; /* Set list text size */
 }
 
 /* Image */
 img {
-  display: block;
-  margin: 0 auto 20px;
-  width: 140px;
+  display: block; /* Make image act like block element */
+  margin: 0 auto 20px; /* Center image and add bottom space */
+  width: 140px; /* Set image width */
 }
 
 /* Table */
 table {
-  width: 100%;
-  border-collapse: collapse;
+  width: 100%; /* Make table take full available width */
+  border-collapse: collapse; /* Merge table borders together */
 }
 
 th, td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  font-size: 20px;
+  border: 1px solid #ddd; /* Add border around table cells */
+  padding: 10px; /* Add space inside table cells */
+  font-size: 20px; /* Set table text size */
 }
 
 th {
-  background: #ffe4dc;
+  background: #ffe4dc; /* Set table header background color */
 }
 
 /* Links */
 main a {
-  color: #ff7f50;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+  color: #ff7f50; /* Set link color inside main content */
+  text-decoration: none; /* Remove default underline */
+  border-bottom: 1px solid transparent; /* Prepare underline effect for hover */
 }
 
 main a:hover {
-  border-bottom: 1px solid #ff7f50;
+  border-bottom: 1px solid #ff7f50; /* Show underline when mouse is over link */
 }
 
 /* Footer */
 footer {
-  background: #f1f5f9;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+  background: #f1f5f9; /* Set footer background color */
+  text-align: center; /* Center footer text */
+  padding: 15px; /* Add space inside footer */
+  margin-top: 20px; /* Add space above footer */
 }
