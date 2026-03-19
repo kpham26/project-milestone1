@@ -1,8 +1,8 @@
 /* General */
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;  /* Set font */
   margin: 0;
-  background: #ffffff;
+  background: #ffffff;  /*Make background color white */
   color: #333;
   font-size: 22px; /* adjusted for better balance */
 }
