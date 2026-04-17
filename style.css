@@ -145,3 +145,16 @@ footer {
   padding: 15px; /* Add space inside footer */
   margin-top: 20px; /* Add space above footer */
 }
+
+/* Remove unwanted spacing from results area when empty */
+#results {
+  margin-top: 0;
+  padding: 0;
+  min-height: 0;
+}
+
+/* Prevent last quiz section from adding extra space */
+#quizForm .actions {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
