@@ -7,7 +7,6 @@ body {
   font-size: 22px; /* Set base text size */
 }
 
-
 /* Header */
 header {
   background: #ff7f50; /* Set header background color */
@@ -145,59 +144,4 @@ footer {
   text-align: center; /* Center footer text */
   padding: 15px; /* Add space inside footer */
   margin-top: 20px; /* Add space above footer */
-}
-
-/* Quiz form layout */
-#quizForm {
-  margin-top: 20px;
-}
-
-/* Quiz questions spacing */
-#quizForm section {
-  background: #fafafa;
-  border: 1px solid #eee;
-  border-left: 4px solid #4a6fa5;
-  margin-bottom: 20px;
-  padding: 15px;
-}
-
-/* Quiz buttons */
-button {
-  padding: 10px 15px;
-  font-size: 18px;
-  border: none;
-  background: #4a6fa5;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
-  transition: 0.2s;
-}
-
-button:hover {
-  background: #3b5a85;
-}
-
-/* Results container */
-#results {
-  margin-top: 20px;
-}
-
-/* Correct and wrong answer styling (already used in JS) */
-.correct {
-  color: green;
-  font-weight: bold;
-}
-
-.wrong {
-  color: red;
-  font-weight: bold;
-}
-
-/* Result box styling */
-.result-box {
-  margin-top: 20px;
-  padding: 15px;
-  border: 2px solid #ddd;
-  background: #f9f9f9;
 }
