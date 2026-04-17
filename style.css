@@ -2,62 +2,58 @@
 body {
   font-family: 'Open Sans', Arial, sans-serif; /* Set font for the whole website */
   margin: 0; /* Remove default space around the page */
-  background: #ffffff; /* Make background color white */
+  background: #f9fafb; /* Light background for better readability */
   color: #333; /* Set main text color */
-  font-size: 22px; /* Set base text size */
+  font-size: 18px; /* Set base text size */
+  line-height: 1.6; /* Improve readability */
 }
 
 /* Header */
 header {
-  background: #ff7f50; /* Set header background color */
+  background: linear-gradient(135deg, #ff7f50, #ff9966); /* Improve header color style */
   color: white; /* Make header text white */
   text-align: center; /* Center header text */
-  padding: 20px; /* Add space inside header */
+  padding: 25px 15px; /* Add space inside header */
 }
 
 header h1 {
-  font-size: 42px; /* Make main header title larger */
+  font-size: 40px; /* Make main header title larger */
+  margin: 0; /* Remove default margin */
 }
 
 header h2 {
-  font-size: 24px; /* Make subtitle smaller than main title */
+  font-size: 20px; /* Make subtitle smaller than main title */
+  font-weight: 400; /* Make subtitle lighter */
+  margin-top: 8px; /* Add spacing from title */
 }
 
 /* Navigation */
 nav {
-  background: #f1f5f9; /* Set navigation background color */
-  padding: 10px; /* Add space inside navigation bar */
+  background: white; /* Set navigation background color */
+  padding: 12px; /* Add space inside navigation bar */
   border-bottom: 1px solid #ddd; /* Add line below navigation */
 }
 
-nav h1 {
-  text-align: center; /* Center navigation heading */
-  font-size: 16px; /* Set navigation heading size */
-  margin: 0 0 5px; /* Remove top margin and add small bottom space */
-  color: #555; /* Set navigation heading color */
-}
-
-/* Flex layout */
 nav ul {
   display: flex; /* Put navigation items in one row */
   justify-content: center; /* Center navigation items */
   list-style: none; /* Remove bullet points */
   padding: 0; /* Remove default list padding */
   margin: 0; /* Remove default list margin */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
 nav li {
-  margin: 0 12px; /* Add space between navigation items */
+  margin: 5px 10px; /* Add space between navigation items */
 }
 
 nav a {
   text-decoration: none; /* Remove underline from links */
   color: #333; /* Set navigation link color */
-  padding: 8px 12px; /* Add space inside link area */
-  border-radius: 5px; /* Round the corners of the link background */
-  font-size: 18px; /* Set navigation text size */
-  transition: 0.2s; /* Make hover effect smooth */
+  padding: 8px 14px; /* Add space inside link area */
+  border-radius: 6px; /* Slight rounding for modern look */
   font-weight: 600; /* Make navigation text semi-bold */
+  transition: 0.2s ease; /* Smooth hover effect */
 }
 
 /* Hover effect */
@@ -66,76 +62,70 @@ nav a:hover {
   color: white; /* Change text color on hover */
 }
 
-/* Active page */
-nav a.active {
-  background-color: #4a6fa5; /* Highlight current page link */
-  color: white; /* Make active page text white */
-  font-weight: 700; /* Make active page text bolder */
-}
-
 /* Main */
 main {
-  max-width: 850px; /* Limit content width */
-  margin: 25px auto; /* Center main content and add top/bottom space */
+  max-width: 900px; /* Limit content width */
+  margin: 30px auto; /* Center main content and add spacing */
   padding: 20px; /* Add space inside main content area */
-  background: #ffffff; /* Keep main content background white */
 }
 
 /* Sections */
 section {
-  margin-bottom: 30px; /* Add space between sections */
-  padding: 15px; /* Add space inside each section */
-  border-left: 4px solid #ff7f50; /* Add colored line on left side of each section */
+  background: white; /* Give section a card-like look */
+  margin-bottom: 20px; /* Add space between sections */
+  padding: 18px; /* Add space inside each section */
+  border-left: 5px solid #ff7f50; /* Add colored line on left side */
+  border-radius: 6px; /* Round edges slightly */
 }
 
 /* Headings */
 h2 {
-  font-size: 28px; /* Set section heading size */
+  font-size: 24px; /* Set section heading size */
+  margin-top: 0; /* Remove extra spacing above headings */
 }
 
 /* Paragraphs */
 p {
-  font-size: 20px; /* Set paragraph text size */
-  line-height: 1.7; /* Add space between lines for readability */
+  font-size: 17px; /* Set paragraph text size */
+  line-height: 1.6; /* Improve readability */
 }
 
 /* Lists */
 li {
-  font-size: 20px; /* Set list text size */
+  font-size: 17px; /* Set list text size */
 }
 
 /* Image */
 img {
   display: block; /* Make image act like block element */
-  margin: 0 auto 20px; /* Center image and add bottom space */
+  margin: 10px auto 20px; /* Center image and add spacing */
   width: 140px; /* Set image width */
 }
 
 /* Table */
 table {
-  width: 100%; /* Make table take full available width */
-  border-collapse: collapse; /* Merge table borders together */
+  width: 100%; /* Make table take full width */
+  border-collapse: collapse; /* Merge table borders */
 }
 
 th, td {
   border: 1px solid #ddd; /* Add border around table cells */
   padding: 10px; /* Add space inside table cells */
-  font-size: 20px; /* Set table text size */
+  font-size: 16px; /* Set table text size */
 }
 
 th {
-  background: #ffe4dc; /* Set table header background color */
+  background: #ffe4dc; /* Set header background color */
 }
 
 /* Links */
 main a {
-  color: #ff7f50; /* Set link color inside main content */
-  text-decoration: none; /* Remove default underline */
-  border-bottom: 1px solid transparent; /* Prepare underline effect for hover */
+  color: #ff7f50; /* Set link color */
+  text-decoration: none; /* Remove underline */
 }
 
 main a:hover {
-  border-bottom: 1px solid #ff7f50; /* Show underline when mouse is over link */
+  text-decoration: underline; /* Add underline on hover */
 }
 
 /* Footer */
@@ -143,18 +133,48 @@ footer {
   background: #f1f5f9; /* Set footer background color */
   text-align: center; /* Center footer text */
   padding: 15px; /* Add space inside footer */
-  margin-top: 20px; /* Add space above footer */
+  margin-top: 30px; /* Add spacing above footer */
 }
 
-/* Remove unwanted spacing from results area when empty */
-#results {
-  margin-top: 0;
-  padding: 0;
-  min-height: 0;
+/* Quiz */
+#quizForm section {
+  border-left: 5px solid #4a6fa5; /* Change quiz section accent color */
 }
 
-/* Prevent last quiz section from adding extra space */
 #quizForm .actions {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  display: flex; /* Align buttons in a row */
+  gap: 10px; /* Add spacing between buttons */
+}
+
+button {
+  padding: 10px 16px; /* Add button padding */
+  font-size: 16px; /* Set button text size */
+  border: none; /* Remove border */
+  border-radius: 6px; /* Round corners */
+  cursor: pointer; /* Show pointer on hover */
+  background: #4a6fa5; /* Set button color */
+  color: white; /* Make text white */
+  transition: 0.2s; /* Smooth hover effect */
+}
+
+button:hover {
+  background: #3b5a85; /* Darker hover color */
+}
+
+.result-box {
+  margin-top: 15px; /* Add spacing above results */
+  padding: 15px; /* Add internal spacing */
+  border-radius: 6px; /* Round edges */
+  background: #f8f9fb; /* Light background */
+  border: 1px solid #ddd; /* Subtle border */
+}
+
+.correct {
+  color: #1a7f37; /* Green for correct answers */
+  font-weight: bold; /* Make text bold */
+}
+
+.wrong {
+  color: #d11a2a; /* Red for wrong answers */
+  font-weight: bold; /* Make text bold */
 }
