@@ -2,179 +2,183 @@
 body {
   font-family: 'Open Sans', Arial, sans-serif; /* Set font for the whole website */
   margin: 0; /* Remove default space around the page */
-  background: #f9fafb; /* Light background for better readability */
-  color: #333; /* Set main text color */
+  background: #eef2f7; /* Stronger background change for visible difference */
+  color: #222; /* Darker text for better contrast */
   font-size: 18px; /* Set base text size */
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.7; /* Improve readability */
 }
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #ff7f50, #ff9966); /* Improve header color style */
+  background: #ff7f50; /* Keep brand color but make it solid and bold */
   color: white; /* Make header text white */
   text-align: center; /* Center header text */
-  padding: 25px 15px; /* Add space inside header */
+  padding: 30px 20px; /* More spacing for stronger layout feel */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Add depth */
 }
 
 header h1 {
-  font-size: 40px; /* Make main header title larger */
-  margin: 0; /* Remove default margin */
+  font-size: 44px; /* Make main header title larger */
+  margin: 0; /* Remove default spacing */
 }
 
 header h2 {
-  font-size: 20px; /* Make subtitle smaller than main title */
-  font-weight: 400; /* Make subtitle lighter */
-  margin-top: 8px; /* Add spacing from title */
+  font-size: 22px; /* Subtitle size */
+  font-weight: 400; /* Lighter subtitle */
+  margin-top: 8px; /* Space below title */
 }
 
 /* Navigation */
 nav {
-  background: white; /* Set navigation background color */
-  padding: 12px; /* Add space inside navigation bar */
-  border-bottom: 1px solid #ddd; /* Add line below navigation */
+  background: white; /* Clean navigation background */
+  padding: 15px; /* More spacing */
+  border-bottom: 2px solid #ddd; /* Stronger separation */
+  position: sticky; /* Keeps nav visible when scrolling */
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
-  display: flex; /* Put navigation items in one row */
-  justify-content: center; /* Center navigation items */
-  list-style: none; /* Remove bullet points */
-  padding: 0; /* Remove default list padding */
-  margin: 0; /* Remove default list margin */
-  flex-wrap: wrap; /* Allow wrapping on small screens */
-}
-
-nav li {
-  margin: 5px 10px; /* Add space between navigation items */
+  display: flex; /* Horizontal layout */
+  justify-content: center; /* Center items */
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  gap: 10px; /* Better spacing between items */
+  flex-wrap: wrap; /* Responsive wrapping */
 }
 
 nav a {
-  text-decoration: none; /* Remove underline from links */
-  color: #333; /* Set navigation link color */
-  padding: 8px 14px; /* Add space inside link area */
-  border-radius: 6px; /* Slight rounding for modern look */
-  font-weight: 600; /* Make navigation text semi-bold */
-  transition: 0.2s ease; /* Smooth hover effect */
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Default text color */
+  padding: 10px 16px; /* Bigger clickable area */
+  border-radius: 8px; /* Softer corners */
+  font-weight: 600; /* Stronger text */
+  background: #f1f5f9; /* Button-like navigation */
+  transition: 0.2s ease;
 }
 
 /* Hover effect */
 nav a:hover {
-  background-color: #4a6fa5; /* Change background color when mouse is over link */
-  color: white; /* Change text color on hover */
+  background: #4a6fa5; /* Strong blue hover */
+  color: white; /* Contrast text */
+  transform: translateY(-2px); /* Slight lift effect */
 }
 
 /* Main */
 main {
-  max-width: 900px; /* Limit content width */
-  margin: 30px auto; /* Center main content and add spacing */
-  padding: 20px; /* Add space inside main content area */
+  max-width: 950px; /* Wider content area */
+  margin: 40px auto; /* More spacing */
+  padding: 25px; /* More breathing room */
 }
 
 /* Sections */
 section {
-  background: white; /* Give section a card-like look */
-  margin-bottom: 20px; /* Add space between sections */
-  padding: 18px; /* Add space inside each section */
-  border-left: 5px solid #ff7f50; /* Add colored line on left side */
-  border-radius: 6px; /* Round edges slightly */
+  background: white; /* Card look */
+  margin-bottom: 25px; /* Space between blocks */
+  padding: 22px; /* More internal spacing */
+  border-radius: 10px; /* More modern look */
+  border-left: 6px solid #ff7f50; /* Strong accent line */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08); /* Visible depth */
 }
 
 /* Headings */
 h2 {
-  font-size: 24px; /* Set section heading size */
-  margin-top: 0; /* Remove extra spacing above headings */
+  font-size: 26px; /* Strong section heading */
+  margin-top: 0; /* Remove top gap */
 }
 
 /* Paragraphs */
 p {
-  font-size: 17px; /* Set paragraph text size */
-  line-height: 1.6; /* Improve readability */
+  font-size: 17px; /* Clean text size */
 }
 
 /* Lists */
 li {
-  font-size: 17px; /* Set list text size */
+  font-size: 17px; /* Consistent text size */
 }
 
 /* Image */
 img {
-  display: block; /* Make image act like block element */
-  margin: 10px auto 20px; /* Center image and add spacing */
-  width: 140px; /* Set image width */
+  display: block; /* Center image */
+  margin: 15px auto 25px; /* Better spacing */
+  width: 150px; /* Slightly larger images */
 }
 
 /* Table */
 table {
-  width: 100%; /* Make table take full width */
-  border-collapse: collapse; /* Merge table borders */
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Clean borders */
+  margin-top: 10px; /* Space above table */
 }
 
 th, td {
-  border: 1px solid #ddd; /* Add border around table cells */
-  padding: 10px; /* Add space inside table cells */
-  font-size: 16px; /* Set table text size */
+  border: 1px solid #ddd; /* Table borders */
+  padding: 12px; /* More spacing */
+  font-size: 16px; /* Table text size */
 }
 
 th {
-  background: #ffe4dc; /* Set header background color */
+  background: #ffe4dc; /* Header highlight */
 }
 
 /* Links */
 main a {
-  color: #ff7f50; /* Set link color */
+  color: #ff7f50; /* Link color */
   text-decoration: none; /* Remove underline */
 }
 
 main a:hover {
-  text-decoration: underline; /* Add underline on hover */
+  text-decoration: underline; /* Hover effect */
 }
 
 /* Footer */
 footer {
-  background: #f1f5f9; /* Set footer background color */
-  text-align: center; /* Center footer text */
-  padding: 15px; /* Add space inside footer */
-  margin-top: 30px; /* Add spacing above footer */
+  background: #1f2937; /* Dark footer for contrast */
+  color: white; /* White text */
+  text-align: center; /* Center text */
+  padding: 20px; /* Space inside footer */
+  margin-top: 40px; /* Separation from content */
 }
 
 /* Quiz */
 #quizForm section {
-  border-left: 5px solid #4a6fa5; /* Change quiz section accent color */
+  border-left: 6px solid #4a6fa5; /* Blue accent for quiz */
 }
 
 #quizForm .actions {
-  display: flex; /* Align buttons in a row */
-  gap: 10px; /* Add spacing between buttons */
+  display: flex; /* Button row */
+  gap: 12px; /* Space between buttons */
 }
 
 button {
-  padding: 10px 16px; /* Add button padding */
-  font-size: 16px; /* Set button text size */
+  padding: 10px 18px; /* Button size */
+  font-size: 16px; /* Text size */
   border: none; /* Remove border */
-  border-radius: 6px; /* Round corners */
-  cursor: pointer; /* Show pointer on hover */
-  background: #4a6fa5; /* Set button color */
-  color: white; /* Make text white */
-  transition: 0.2s; /* Smooth hover effect */
+  border-radius: 8px; /* Rounded look */
+  cursor: pointer; /* Pointer hover */
+  background: #4a6fa5; /* Primary button color */
+  color: white; /* Text color */
 }
 
 button:hover {
-  background: #3b5a85; /* Darker hover color */
+  background: #2f4f7f; /* Darker hover */
 }
 
 .result-box {
-  margin-top: 15px; /* Add spacing above results */
-  padding: 15px; /* Add internal spacing */
-  border-radius: 6px; /* Round edges */
-  background: #f8f9fb; /* Light background */
-  border: 1px solid #ddd; /* Subtle border */
+  margin-top: 15px; /* Space above result */
+  padding: 15px; /* Internal spacing */
+  border-radius: 8px; /* Rounded box */
+  background: #f8fafc; /* Light background */
+  border: 1px solid #ddd; /* Border */
 }
 
 .correct {
-  color: #1a7f37; /* Green for correct answers */
-  font-weight: bold; /* Make text bold */
+  color: #1a7f37; /* Green correct */
+  font-weight: bold;
 }
 
 .wrong {
-  color: #d11a2a; /* Red for wrong answers */
-  font-weight: bold; /* Make text bold */
+  color: #d11a2a; /* Red wrong */
+  font-weight: bold;
 }
