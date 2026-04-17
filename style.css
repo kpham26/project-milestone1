@@ -201,3 +201,13 @@ button:hover {
   border: 2px solid #ddd;
   background: #f9f9f9;
 }
+
+/* Remove extra space after last quiz section */
+#quizForm section:last-of-type {
+  margin-bottom: 10px;
+}
+
+/* Reduce space under buttons area */
+#quizForm {
+  margin-bottom: 0;
+}
