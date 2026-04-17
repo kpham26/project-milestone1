@@ -1,188 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Basic page setup for responsive design -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Quiz</title>
+  <!-- Page title shown in browser tab -->
+  <title>Cybersecurity Quiz</title>
 
-  <!-- Import consistent font used across the website -->
+  <!-- Import consistent website font -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
 
-  <!-- Link to shared stylesheet for consistent design -->
+  <!-- Link to shared website styling -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Styles used only for quiz result feedback -->
-  <style>
-    .correct { color: green; font-weight: bold; }
-    .wrong { color: red; font-weight: bold; }
-    .result-box {
-      margin-top: 20px;
-      padding: 15px;
-      border: 2px solid #ddd;
-      background: #f9f9f9;
-    }
-  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Cybersecurity Quiz</h1>
-  <h2>Test Your Knowledge</h2>
-</header>
+  <!-- Website header (maintains consistency with other pages) -->
+  <header>
+    <h1>Cybersecurity Quiz</h1>
+    <h2>Test Your Knowledge</h2>
+  </header>
 
-<!-- Navigation menu consistent with all site pages -->
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="topic1.html">Cyber Threats</a></li>
-    <li><a href="topic2.html">Protection Methods</a></li>
-    <li><a href="concepts.html">Concepts</a></li>
-    <li><a href="references.html">References</a></li>
-    <li><a href="quiz.html">Quiz</a></li>
-  </ul>
-</nav>
+  <!-- Navigation bar (same structure across all pages for consistency) -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topic1.html">Cyber Threats</a></li>
+      <li><a href="topic2.html">Protection Methods</a></li>
+      <li><a href="concepts.html">Concepts</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
 
-<main>
+  <!-- Main content area for quiz -->
+  <main>
 
-<!-- Quiz introduction section -->
-<section>
-  <h2>Cybersecurity Quiz</h2>
-  <p>This quiz tests your understanding of cybersecurity concepts covered in this website.</p>
-</section>
+    <!-- Intro section explaining purpose of quiz -->
+    <section>
+      <h2>Quiz Overview</h2>
+      <p>
+        This quiz is designed to test your understanding of cybersecurity concepts,
+        threats, and protection methods covered in this website.
+      </p>
+    </section>
 
-<!-- Quiz form that collects all user answers -->
-<form id="quizForm">
+    <!-- Quiz form container -->
+    <form id="quizForm">
 
-  <!-- Question 1: Fill-in-the-blank -->
-  <section>
-    <h3>1. Fill in the blank</h3>
-    <p>_____ is used to convert data into unreadable form to protect it.</p>
-    <input type="text" id="q1">
-  </section>
+      <!-- Question 1: Text input (concept recall) -->
+      <section class="question">
+        <h3>1. Fill in the blank</h3>
+        <p>_____ is used to convert data into unreadable form to protect it.</p>
+        <input type="text" id="q1" placeholder="Enter your answer">
+      </section>
 
-  <!-- Question 2: Multiple choice -->
-  <section>
-    <h3>2. What is a firewall?</h3>
-    <label><input type="radio" name="q2" value="a"> A virus scanner</label><br>
-    <label><input type="radio" name="q2" value="b"> A system that blocks unauthorized access</label><br>
-    <label><input type="radio" name="q2" value="c"> A type of password</label>
-  </section>
+      <!-- Question 2: Single choice (firewall concept) -->
+      <section class="question">
+        <h3>2. What is a firewall?</h3>
+        <label><input type="radio" name="q2" value="a"> A virus scanner</label><br>
+        <label><input type="radio" name="q2" value="b"> A system that blocks unauthorized access</label><br>
+        <label><input type="radio" name="q2" value="c"> A type of password</label>
+      </section>
 
-  <!-- Question 3: Multiple choice -->
-  <section>
-    <h3>3. What is phishing?</h3>
-    <label><input type="radio" name="q3" value="a"> Fake messages that steal information</label><br>
-    <label><input type="radio" name="q3" value="b"> A firewall system</label><br>
-    <label><input type="radio" name="q3" value="c"> A secure login method</label>
-  </section>
+      <!-- Question 3: Phishing understanding -->
+      <section class="question">
+        <h3>3. What is phishing?</h3>
+        <label><input type="radio" name="q3" value="a"> Fake messages that steal information</label><br>
+        <label><input type="radio" name="q3" value="b"> A firewall system</label><br>
+        <label><input type="radio" name="q3" value="c"> A secure login method</label>
+      </section>
 
-  <!-- Question 4: Multiple choice -->
-  <section>
-    <h3>4. What does MFA stand for?</h3>
-    <label><input type="radio" name="q4" value="a"> Malware File Access</label><br>
-    <label><input type="radio" name="q4" value="b"> Main Firewall Access</label><br>
-    <label><input type="radio" name="q4" value="c"> Multi-Factor Authentication</label>
-  </section>
+      <!-- Question 4: Acronym understanding -->
+      <section class="question">
+        <h3>4. What does MFA stand for?</h3>
+        <label><input type="radio" name="q4" value="a"> Malware File Access</label><br>
+        <label><input type="radio" name="q4" value="b"> Main Firewall Access</label><br>
+        <label><input type="radio" name="q4" value="c"> Multi-Factor Authentication</label>
+      </section>
 
-  <!-- Question 5: Multi-select question -->
-  <section>
-    <h3>5. Select all cybersecurity protections</h3>
-    <label><input type="checkbox" name="q5" value="antivirus"> Antivirus Software</label><br>
-    <label><input type="checkbox" name="q5" value="firewall"> Firewall</label><br>
-    <label><input type="checkbox" name="q5" value="encryption"> Encryption</label><br>
-    <label><input type="checkbox" name="q5" value="phishing"> Phishing attacks</label>
-  </section>
+      <!-- Question 5: Multi-select (real-world protection tools) -->
+      <section class="question">
+        <h3>5. Select all cybersecurity protections</h3>
+        <label><input type="checkbox" name="q5" value="antivirus"> Antivirus Software</label><br>
+        <label><input type="checkbox" name="q5" value="firewall"> Firewall</label><br>
+        <label><input type="checkbox" name="q5" value="encryption"> Encryption</label><br>
+        <label><input type="checkbox" name="q5" value="phishing"> Phishing attacks</label>
+      </section>
 
-  <br>
+      <!-- Action buttons for user interaction -->
+      <section class="actions">
+        <button type="submit">Submit Quiz</button>
+        <button type="reset">Reset</button>
+      </section>
 
-  <!-- Submit button triggers quiz evaluation -->
-  <button type="submit">Submit Quiz</button>
+    </form>
 
-  <!-- Reset button clears all answers -->
-  <button type="reset">Reset</button>
+    <!-- Results display area -->
+    <section id="results"></section>
 
-</form>
+  </main>
 
-<!-- Area where results are displayed after submission -->
-<section id="results"></section>
+  <!-- JavaScript handles quiz logic and scoring -->
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent page reload on submit
 
-</main>
+      let score = 0;
+      let output = "";
 
-<script>
-// Handles quiz submission and scoring logic
-document.getElementById("quizForm").addEventListener("submit", function(event) {
-  event.preventDefault();
+      // Question 1 validation (text input comparison)
+      let q1 = document.getElementById("q1").value.trim().toLowerCase();
+      if (q1 === "encryption") {
+        score++;
+        output += "<p style='color:green;font-weight:bold;'>Q1 Correct</p>";
+      } else {
+        output += "<p style='color:red;'>Q1 Wrong (Answer: Encryption)</p>";
+      }
 
-  let score = 0;
-  let output = "";
+      // Question 2 validation (radio selection)
+      let q2 = document.querySelector('input[name="q2"]:checked');
+      if (q2 && q2.value === "b") {
+        score++;
+        output += "<p style='color:green;font-weight:bold;'>Q2 Correct</p>";
+      } else {
+        output += "<p style='color:red;'>Q2 Wrong (Answer: B)</p>";
+      }
 
-  // Checks answer for Question 1
-  let q1 = document.getElementById("q1").value.trim().toLowerCase();
-  if (q1 === "encryption") {
-    score++;
-    output += "<p class='correct'>Q1 Correct</p>";
-  } else {
-    output += "<p class='wrong'>Q1 Wrong (Answer: Encryption)</p>";
-  }
+      // Question 3 validation (radio selection)
+      let q3 = document.querySelector('input[name="q3"]:checked');
+      if (q3 && q3.value === "a") {
+        score++;
+        output += "<p style='color:green;font-weight:bold;'>Q3 Correct</p>";
+      } else {
+        output += "<p style='color:red;'>Q3 Wrong (Answer: A)</p>";
+      }
 
-  // Checks answer for Question 2
-  let q2 = document.querySelector('input[name="q2"]:checked');
-  if (q2 && q2.value === "b") {
-    score++;
-    output += "<p class='correct'>Q2 Correct</p>";
-  } else {
-    output += "<p class='wrong'>Q2 Wrong (Answer: B)</p>";
-  }
+      // Question 4 validation (radio selection)
+      let q4 = document.querySelector('input[name="q4"]:checked');
+      if (q4 && q4.value === "c") {
+        score++;
+        output += "<p style='color:green;font-weight:bold;'>Q4 Correct</p>";
+      } else {
+        output += "<p style='color:red;'>Q4 Wrong (Answer: C)</p>";
+      }
 
-  // Checks answer for Question 3
-  let q3 = document.querySelector('input[name="q3"]:checked');
-  if (q3 && q3.value === "a") {
-    score++;
-    output += "<p class='correct'>Q3 Correct</p>";
-  } else {
-    output += "<p class='wrong'>Q3 Wrong (Answer: A)</p>";
-  }
+      // Question 5 validation (multiple correct selections)
+      let q5 = document.querySelectorAll('input[name="q5"]:checked');
+      let answers = Array.from(q5).map(x => x.value);
 
-  // Checks answer for Question 4
-  let q4 = document.querySelector('input[name="q4"]:checked');
-  if (q4 && q4.value === "c") {
-    score++;
-    output += "<p class='correct'>Q4 Correct</p>";
-  } else {
-    output += "<p class='wrong'>Q4 Wrong (Answer: C)</p>";
-  }
+      let correct = ["antivirus", "firewall", "encryption"];
 
-  // Checks multi-select Question 5
-  let q5 = document.querySelectorAll('input[name="q5"]:checked');
-  let answers = Array.from(q5).map(x => x.value);
+      let isCorrect =
+        answers.length === correct.length &&
+        correct.every(val => answers.includes(val));
 
-  let correct = ["antivirus", "firewall", "encryption"];
+      if (isCorrect) {
+        score++;
+        output += "<p style='color:green;font-weight:bold;'>Q5 Correct</p>";
+      } else {
+        output += "<p style='color:red;'>Q5 Wrong (Answer: Antivirus, Firewall, Encryption)</p>";
+      }
 
-  let isCorrect =
-    answers.length === correct.length &&
-    correct.every(val => answers.includes(val));
+      // Final result evaluation
+      let resultText = score >= 3 ? "PASS" : "FAIL";
 
-  if (isCorrect) {
-    score++;
-    output += "<p class='correct'>Q5 Correct</p>";
-  } else {
-    output += "<p class='wrong'>Q5 Wrong (Answer: Antivirus, Firewall, Encryption)</p>";
-  }
-
-  // Determines final pass/fail result
-  let resultText = score >= 3 ? "PASS" : "FAIL";
-
-  // Displays final score and results
-  document.getElementById("results").innerHTML =
-    "<div class='result-box'>" +
-    "<h3>Total Score: " + score + "/5</h3>" +
-    "<h3>Result: " + resultText + "</h3>" +
-    output +
-    "</div>";
-});
-</script>
+      // Display final score and feedback
+      document.getElementById("results").innerHTML =
+        "<div class='result-box'>" +
+        "<h3>Total Score: " + score + "/5</h3>" +
+        "<h3>Result: " + resultText + "</h3>" +
+        output +
+        "</div>";
+    });
+  </script>
 
 </body>
 </html>
