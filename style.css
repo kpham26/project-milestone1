@@ -7,7 +7,7 @@ body {
   font-size: 18px; /* Set base text size */
   line-height: 1.7; /* Improve readability */
 }
-
+ 
 /* Header */
 header {
   background: #ff7f50; /* Keep brand color but make it solid and bold */
@@ -16,18 +16,18 @@ header {
   padding: 30px 20px; /* More spacing for stronger layout feel */
   box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Add depth */
 }
-
+ 
 header h1 {
   font-size: 44px; /* Make main header title larger */
   margin: 0; /* Remove default spacing */
 }
-
+ 
 header h2 {
   font-size: 22px; /* Subtitle size */
   font-weight: 400; /* Lighter subtitle */
   margin-top: 8px; /* Space below title */
 }
-
+ 
 /* Navigation */
 nav {
   background: white; /* Clean navigation background */
@@ -37,7 +37,7 @@ nav {
   top: 0;
   z-index: 1000;
 }
-
+ 
 nav ul {
   display: flex; /* Horizontal layout */
   justify-content: center; /* Center items */
@@ -47,7 +47,7 @@ nav ul {
   gap: 10px; /* Better spacing between items */
   flex-wrap: wrap; /* Responsive wrapping */
 }
-
+ 
 nav a {
   text-decoration: none; /* Remove underline */
   color: #333; /* Default text color */
@@ -56,22 +56,23 @@ nav a {
   font-weight: 600; /* Stronger text */
   background: #f1f5f9; /* Button-like navigation */
   transition: 0.2s ease;
+  display: block; /* Makes the full link area tappable on mobile */
 }
-
+ 
 /* Hover effect */
 nav a:hover {
   background: #4a6fa5; /* Strong blue hover */
   color: white; /* Contrast text */
   transform: translateY(-2px); /* Slight lift effect */
 }
-
+ 
 /* Main */
 main {
   max-width: 950px; /* Wider content area */
   margin: 40px auto; /* More spacing */
   padding: 25px; /* More breathing room */
 }
-
+ 
 /* Sections */
 section {
   background: white; /* Card look */
@@ -81,57 +82,65 @@ section {
   border-left: 6px solid #ff7f50; /* Strong accent line */
   box-shadow: 0 3px 8px rgba(0,0,0,0.08); /* Visible depth */
 }
-
+ 
 /* Headings */
 h2 {
   font-size: 26px; /* Strong section heading */
   margin-top: 0; /* Remove top gap */
 }
-
+ 
 /* Paragraphs */
 p {
   font-size: 17px; /* Clean text size */
 }
-
+ 
 /* Lists */
 li {
   font-size: 17px; /* Consistent text size */
 }
-
+ 
 /* Image */
 img {
   display: block; /* Center image */
   margin: 15px auto 25px; /* Better spacing */
   width: 150px; /* Slightly larger images */
+  max-width: 100%; /* Prevents image from overflowing on small screens */
 }
-
+ 
 /* Table */
 table {
   width: 100%; /* Full width */
   border-collapse: collapse; /* Clean borders */
   margin-top: 10px; /* Space above table */
+  min-width: 400px; /* Keeps columns readable before horizontal scroll kicks in */
 }
-
+ 
 th, td {
   border: 1px solid #ddd; /* Table borders */
   padding: 12px; /* More spacing */
   font-size: 16px; /* Table text size */
 }
-
+ 
 th {
   background: #ffe4dc; /* Header highlight */
 }
-
+ 
+/* Table wrapper - allows table to scroll horizontally on small screens */
+.table-wrapper {
+  overflow-x: auto; /* Enables horizontal scroll when table is too wide */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS devices */
+}
+ 
 /* Links */
 main a {
   color: #ff7f50; /* Link color */
   text-decoration: none; /* Remove underline */
 }
-
+ 
 main a:hover {
   text-decoration: underline; /* Hover effect */
 }
-
+ 
 /* Footer */
 footer {
   background: #1f2937; /* Dark footer for contrast */
@@ -140,17 +149,36 @@ footer {
   padding: 20px; /* Space inside footer */
   margin-top: 40px; /* Separation from content */
 }
-
+ 
 /* Quiz */
 #quizForm section {
   border-left: 6px solid #ff7f50; /* Orange accent for quiz */
 }
-
+ 
 #quizForm .actions {
   display: flex; /* Button row */
   gap: 12px; /* Space between buttons */
+  flex-wrap: wrap; /* Allows buttons to stack on very small screens */
 }
-
+ 
+/* Quiz text input styling */
+#quizForm input[type="text"] {
+  width: 100%; /* Full width input */
+  max-width: 400px; /* Cap width on larger screens */
+  padding: 8px 10px; /* Inner spacing */
+  font-size: 16px; /* Readable text size */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 6px; /* Rounded corners */
+  box-sizing: border-box; /* Prevents input from overflowing its container */
+}
+ 
+/* Quiz radio and checkbox labels */
+#quizForm label {
+  display: block; /* Each label on its own line for easier tapping on mobile */
+  padding: 4px 0; /* Small spacing between options */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+ 
 button {
   padding: 10px 18px; /* Button size */
   font-size: 16px; /* Text size */
@@ -160,11 +188,11 @@ button {
   background: #4a6fa5; /* Primary button color */
   color: white; /* Text color */
 }
-
+ 
 button:hover {
   background: #2f4f7f; /* Darker hover */
 }
-
+ 
 .result-box {
   margin-top: 15px; /* Space above result */
   padding: 15px; /* Internal spacing */
@@ -172,13 +200,134 @@ button:hover {
   background: #f8fafc; /* Light background */
   border: 1px solid #ddd; /* Border */
 }
-
+ 
 .correct {
   color: #1a7f37; /* Green correct */
   font-weight: bold;
 }
-
+ 
 .wrong {
   color: #d11a2a; /* Red wrong */
   font-weight: bold;
+}
+ 
+ 
+/*Responsive Design - Media Queries
+  Breakpoint 1: Tablet  - max-width: 768px
+  Breakpoint 2: Mobile  - max-width: 480px
+ */
+ 
+ 
+/* Tablet screens (768px and below) */
+/* Covers tablets and large phones in landscape mode */
+@media (max-width: 768px) {
+ 
+  /* Reduce header text size so it fits on smaller screens */
+  header h1 {
+    font-size: 34px; /* Smaller than desktop (44px) but still prominent */
+  }
+ 
+  header h2 {
+    font-size: 18px; /* Slightly smaller subtitle */
+  }
+ 
+  /* Reduce main area margins and padding on tablet */
+  main {
+    margin: 20px auto; /* Less vertical spacing than desktop */
+    padding: 15px; /* Tighter padding on tablet */
+  }
+ 
+  /* Slightly reduce section padding */
+  section {
+    padding: 16px; /* Less internal spacing on tablet */
+  }
+ 
+}
+ 
+ 
+/* Mobile screens (480px and below) */
+/* Covers most smartphones held in portrait mode */
+@media (max-width: 480px) {
+ 
+  /* Reduce base font size so text fits without side scrolling */
+  body {
+    font-size: 15px; /* Smaller than desktop (18px) */
+  }
+ 
+  /* Compact header padding on small screens */
+  header {
+    padding: 20px 15px; /* Less top/bottom and side spacing */
+  }
+ 
+  /* Much smaller header title on phone screens */
+  header h1 {
+    font-size: 26px; /* Fits comfortably on a phone screen */
+  }
+ 
+  header h2 {
+    font-size: 16px; /* Smaller subtitle on mobile */
+  }
+ 
+  /* Stack nav links vertically so they are easy to tap */
+  nav ul {
+    flex-direction: column; /* Change from horizontal row to vertical column */
+    align-items: center; /* Center each nav item */
+    gap: 6px; /* Small spacing between stacked links */
+  }
+ 
+  /* Make each nav link wider for easier tapping on touchscreens */
+  nav a {
+    width: 80%; /* Wide tap area */
+    text-align: center; /* Center link text */
+  }
+ 
+  /* Remove side margins so content fills the screen fully */
+  main {
+    margin: 10px; /* Minimal margin on mobile */
+    padding: 10px; /* Minimal padding on mobile */
+  }
+ 
+  /* Tighter section padding on small screens */
+  section {
+    padding: 12px; /* Compact but still readable */
+    border-radius: 6px; /* Slightly less rounded on mobile */
+  }
+ 
+  /* Smaller headings to fit on phone screens */
+  h2 {
+    font-size: 20px; /* Smaller than desktop (26px) */
+  }
+ 
+  /* Smaller paragraph and list text on mobile */
+  p, li {
+    font-size: 15px; /* Matches mobile body size */
+  }
+ 
+  /* Smaller table text and padding to fit more content on screen */
+  th, td {
+    padding: 8px; /* Less spacing inside cells */
+    font-size: 14px; /* Smaller table text on mobile */
+  }
+ 
+  /* Slightly smaller image on mobile */
+  img {
+    width: 100px; /* Reduced from 150px desktop size */
+  }
+ 
+  /* Quiz text input takes full width on mobile */
+  #quizForm input[type="text"] {
+    max-width: 100%; /* Override desktop cap so it fills mobile screen */
+  }
+ 
+  /* Stack quiz buttons vertically on small screens */
+  #quizForm .actions {
+    flex-direction: column; /* Column layout instead of row */
+  }
+ 
+  /* Make buttons full width so they are easy to tap */
+  button {
+    width: 100%; /* Full width tap target on mobile */
+    font-size: 15px; /* Slightly smaller button text */
+  }
+ 
 }
